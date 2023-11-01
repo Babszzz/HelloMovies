@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  /* 1rem = 10px the html fontsize determines the value of one rem */
+
+  @media only screen and (max-width: 81.25em) {
+    font-size: 56.25%;
+    /* 1rem becomes 9px. */
+  }
+
+  @media only screen and (max-width: 62.5em) {
+    font-size: 50%;
+    /* 1rem becomes 8px. */
+  }
+
+  @media only screen and (max-width: 22.5em) {
+    font-size: 37.5%;
+    /* 1rem becomes 6px. */
+  }
+}
+
+body {
+  background-color: #070B15;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #F1F5F9;
+  ;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  min-height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    "Inter", monospace;
+}
